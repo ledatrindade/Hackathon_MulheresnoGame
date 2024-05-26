@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial</title>
+    <style>
+.tela-inicio,
+.tela-inicio * {
+  box-sizing: border-box;
+}
+.tela-inicio {
+  background: var(--color-dark-body-bg-dark, #171923);
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.header {
+  background: #241d31;
+  border-radius: 12px;
+  padding: 12px 20px 12px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1098px;
+  position: absolute;
+  left: 312px;
+  top: 20px;
+}
+.tabs-grp-1 {
+  border-radius: 12px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.tabs-grp-12 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.tab-default {
+  background: #f22e62;
+  border-radius: 8px;
+  padding: 8px 15px 8px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.todos-os-f-rum {
+  color: var(--global-neutral-white, #ffffff);
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+.tabs-grp-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.tab-default2 {
+  border-radius: 8px;
+  padding: 8px 15px 8px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.projetos {
+  color: var(--color-dark-p-text-c1-dark, #bec0c9);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.search-account-info {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.search-bar {
+  border-radius: 6px;
+  border-style: solid;
+  border-color: var(--color-dark-form-input-s-c1-dark, #434557);
+  border-width: 1px;
+  padding: 14px 16px 14px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 222px;
+  position: relative;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.vuesax-linear-search-normal {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.vuesax-linear-search-normal2 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.buscar {
+  color: var(--color-dark-form-placeh-c1-dark, #7d8096);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.content-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.profile-content-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.avatar {
+  border-radius: 36.22px;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  object-fit: cover;
+}
+.content2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.title {
+  color: #f0f1f5;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.overline {
+  color: #b3b6c4;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vuesax-linear-arrow-down {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.vuesax-linear-arrow-down2 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.contacts-grp-1 {
+  background: #241d31;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 1064px;
+  top: 126px;
+}
+.c-1-c-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.conex-es {
+  color: #f0f1f5;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+.rectangle-34625257 {
+  background: var(--color-dark-body-divider-c1-dark, #2c2f41);
+  flex-shrink: 0;
+  width: 298px;
+  height: 1px;
+  position: relative;
+}
+.friends-list-grp-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 298px;
+  position: relative;
+}
+.friend-list-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.profile-img-1 {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+.rectangle-34625155 {
+  border-radius: 47.5px;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  object-fit: cover;
+}
+.rectangle-34625156 {
+  border-radius: 47.5px;
+  border-style: solid;
+  border-color: var(--color-dark-add-story-c1-dark, #4d526d);
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.janayna-basniak {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.friend-list-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.rectangle-346251552 {
+  border-radius: 47.5px;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: calc(50% - 14px);
+  top: calc(50% - 14px);
+  object-fit: cover;
+}
+.rafaela-martins {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.friend-list-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.maria-lais {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.friend-list-4 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.leda-tavares {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.friend-list-5 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.gabriela-russell {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.friend-list-6 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.dianne-santos {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.ver-todas {
+  color: var(--color-dark-heading-c1-dark, #f0f1f5);
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+.contacts-grp-2 {
+  background: #241d31;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 1064px;
+  top: 601px;
+}
+.f-runs-sugeridos {
+  color: #f0f1f5;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+.suggest-item-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.mask {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-346251553 {
+  background: #d9d9d9;
+  border-radius: 47.5px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.rectangle-346251562 {
+  background: var(--color-dark-icon-fill-c1-dark, #3e425b);
+  border-radius: 47.5px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.image-15 {
+  width: 18.29px;
+  height: 18.29px;
+  position: absolute;
+  left: calc(50% - 9.14px);
+  top: calc(50% - 9.14px);
+  object-fit: cover;
+}
+.design-gr-fico {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.friends-list-grp-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 298px;
+  position: relative;
+}
+.rectangle-346251563 {
+  border-radius: 47.5px;
+  border-style: solid;
+  border-color: var(--color-dark-heading-c1-dark, #f0f1f5);
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.image-152 {
+  width: 20.57px;
+  height: 20.57px;
+  position: absolute;
+  left: 5.71px;
+  top: 5.71px;
+  object-fit: cover;
+}
+.image-19 {
+  width: 48px;
+  height: 34.29px;
+  position: absolute;
+  left: -8px;
+  top: -1.14px;
+  object-fit: cover;
+}
+.technology-news-update {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.friends-list-grp-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 298px;
+  position: relative;
+}
+.image-22 {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  object-fit: cover;
+}
+.freelancers {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.friends-list-grp-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 298px;
+  position: relative;
+}
+.image-20 {
+  width: 54px;
+  height: 67px;
+  position: absolute;
+  left: -13px;
+  top: -14px;
+  object-fit: cover;
+}
+.image-21 {
+  width: 115px;
+  height: 143px;
+  position: absolute;
+  left: -32px;
+  top: -55px;
+  object-fit: cover;
+}
+.marketing {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.friends-list-grp-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 298px;
+  position: relative;
+}
+.image-16 {
+  width: 18.29px;
+  height: 18.29px;
+  position: absolute;
+  left: calc(50% - 9.14px);
+  top: calc(50% - 9.14px);
+  object-fit: cover;
+}
+.blender-tutoriais {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.friends-list-grp-7 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 298px;
+  position: relative;
+}
+.image-202 {
+  width: 74px;
+  height: 91px;
+  position: absolute;
+  left: -23px;
+  top: -24px;
+  object-fit: cover;
+}
+.aprenda-java {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.ver-todas2 {
+  color: #f0f1f5;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+.what-s-on-your-mind-comp {
+  background: #241d31;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 722px;
+  position: absolute;
+  left: 312px;
+  top: 264px;
+  overflow: hidden;
+}
+.frame-1261156685 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 682px;
+  position: relative;
+}
+.frame-1261156684 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-1261156678 {
+  background: #3d3252;
+  border-radius: 8px;
+  padding: 15px 12px 15px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.what-s-on-your-mind {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-1261156659 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.icons-grp-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.tabler-icon-photo {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.tabler-icon-brand-youtube {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.tabler-icon-calendar-month {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.button-commponent {
+  background: #f22e62;
+  border-radius: 6px;
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 40px;
+  position: relative;
+}
+.postar {
+  color: var(--global-neutral-white, #ffffff);
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+._31 {
+  color: var(--global-neutral-white, #ffffff);
+  text-align: left;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 140%;
+  font-weight: 400;
+  position: absolute;
+  left: 865px;
+  top: 867px;
+}
+.post-content-grp-1 {
+  background: #241d31;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 722px;
+  position: absolute;
+  left: 312px;
+  top: 435px;
+}
+.content-1-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+._1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.username-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.user-name {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.rectangle-40068 {
+  border-radius: 0px;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  overflow: visible;
+  object-fit: cover;
+}
+.frame-1261156215 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.title2 {
+  color: #f0f1f5;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  position: relative;
+  width: 93px;
+}
+._12-april-at-09-28-pm {
+  color: var(--color-dark-body-captiontext-c1-dark, #b3b6c4);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+._12-april-at-09-28-pm2 {
+  color: var(--color-dark-body-captiontext-c1-dark, #b3b6c4);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  position: relative;
+}
+.component-icon-ic-more {
+  flex-shrink: 0;
+  width: 18px;
+  height: 4px;
+  position: relative;
+  overflow: visible;
+}
+.peace-on-earth-a-won {
+  color: var(--color-dark-p-text-c1-dark, #bec0c9);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 160%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.like-comment-share-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.likes-comment-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.likes {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.tabler-icon-heart {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+._12-likes {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 145%;
+  font-weight: 400;
+  position: relative;
+}
+.comment {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.tabler-icon-message-circle-2 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+._7-comments {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 145%;
+  font-weight: 400;
+  position: relative;
+}
+.share-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.tabler-icon-share-3 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+._0-share {
+  color: var(--color-dark-heading-c2-dark, #d7d9e3);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 145%;
+  font-weight: 400;
+  position: relative;
+}
+.comment-box {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.post-content-grp-2 {
+  background: #241d31;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 722px;
+  position: absolute;
+  left: 312px;
+  top: 765px;
+}
+.rectangle-400682 {
+  border-radius: 0px;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  overflow: visible;
+  object-fit: cover;
+}
+.title3 {
+  color: #f0f1f5;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  position: relative;
+  width: 235px;
+}
+.component-icon-ic-more2 {
+  flex-shrink: 0;
+  width: 18px;
+  height: 4px;
+  position: relative;
+  overflow: visible;
+}
+.image-14 {
+  border-radius: 10px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 276px;
+  position: relative;
+  object-fit: cover;
+}
+.vuesax-linear-heart {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.vuesax-linear-heart2 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.vuesax-linear-message-2 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.vuesax-linear-message-22 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.icon-set {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.vuesax-linear-send-2 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.rectangle-400683 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+  object-fit: cover;
+}
+.frame-12611566782 {
+  background: var(--color-dark-form-input-c1-dark, #2a2d3d);
+  border-radius: 8px;
+  padding: 15px 12px 15px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.sidebar-open {
+  background: #241d31;
+  border-radius: 12px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.1);
+  border-width: 0px 1px 0px 0px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 256px;
+  height: 968px;
+  position: absolute;
+  left: 26px;
+  top: 20px;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.title4 {
+  padding: 0px 12px 0px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.overline2 {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.link {
+  border-radius: 8px;
+  padding: 10px 12px 10px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.tabler-icon-home {
+  flex-shrink: 0;
+  width: 21px;
+  height: 21px;
+  position: relative;
+  overflow: visible;
+}
+.label {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  position: relative;
+  flex: 1;
+}
+.tabler-icon-file-description {
+  flex-shrink: 0;
+  width: 21px;
+  height: 21px;
+  position: relative;
+  overflow: visible;
+}
+.tabler-icon-rocket {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.link2 {
+  background: #3d3252;
+  border-radius: 8px;
+  padding: 10px 12px 10px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.tabler-icon-users-group {
+  flex-shrink: 0;
+  width: 21px;
+  height: 21px;
+  position: relative;
+  overflow: visible;
+}
+.icon-chevron {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  transform: translate(-16px, -16px);
+  overflow: visible;
+}
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 172px;
+  position: relative;
+}
+.link3 {
+  border-radius: 8px;
+  padding: 8px 12px 8px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 172px;
+  position: relative;
+}
+.label2 {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  position: relative;
+  flex: 1;
+}
+.radius {
+  border-radius: 0px 0px 0px 8px;
+  border-style: solid;
+  border-color: #2d2f39;
+  border-width: 0px 0px 2px 2px;
+  flex-shrink: 0;
+  width: 13px;
+  height: 8px;
+  position: absolute;
+  left: -13px;
+  top: calc(50% - 4px);
+}
+.link4 {
+  background: #3d3252;
+  border-radius: 8px;
+  padding: 8px 12px 8px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 172px;
+  position: relative;
+}
+.label3 {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  position: relative;
+  flex: 1;
+}
+.line {
+  background: #2d2f39;
+  flex-shrink: 0;
+  width: 2px;
+  height: 86.27%;
+  position: absolute;
+  left: -13px;
+  bottom: 13.73%;
+  top: 0%;
+}
+.navigation2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.icon-help-circle {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.label4 {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  position: relative;
+  flex: 1;
+}
+.icon-log-out {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.label5 {
+  color: #cc8889;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  position: relative;
+  flex: 1;
+}
+.button {
+  background: #161a23;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #2d2f39;
+  border-width: 1px;
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: absolute;
+  right: -14px;
+  top: 34px;
+}
+.icon-chevron2 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  transform: translate(-16px, 0px);
+  overflow: visible;
+}
+.frame-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 312px;
+  top: 124px;
+}
+.frame-42 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.typography {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.h-1 {
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 36px;
+  line-height: 116.7%;
+  letter-spacing: -1.5px;
+  font-weight: 400;
+  position: relative;
+}
+.h-1-span {
+  color: #f0f1f5;
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 36px;
+  line-height: 116.7%;
+  letter-spacing: -1.5px;
+  font-weight: 300;
+}
+.h-1-span2 {
+  color: #f22e62;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 36px;
+  line-height: 116.7%;
+  letter-spacing: -1.5px;
+  font-weight: 500;
+}
+.h-1-span3 {
+  color: #f0f1f5;
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 36px;
+  line-height: 116.7%;
+  letter-spacing: -1.5px;
+  font-weight: 300;
+}
+.h-12 {
+  color: #f0f1f5;
+  text-align: left;
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 36px;
+  line-height: 116.7%;
+  letter-spacing: -1.5px;
+  font-weight: 300;
+  position: relative;
+}
+
+
+.button {
+  background: #4c4358;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #2d2f39;
+  border-width: 1px;
+  padding: 6px;
+  display: flex;
+  align-items: center; /* Alinhar verticalmente */
+  justify-content: center; /* Alinhar horizontalmente */
+  position: absolute;
+  right: -14px;
+  top: 34px;
+}
+
+.button img{
+  right: -14px;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 200px; /* Ajuste a largura máxima conforme necessário */
+    margin: 0 auto;
+    padding: 10px;
+   
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: transparent; /* Tornando o fundo transparente */
+    border: 1px solid transparent; /* Removendo a borda */
+}
+
+
+.search-button {
+    padding: 6px 10px; /* Reduzindo o padding */
+    font-size: 14px; /* Ajustando o tamanho da fonte */
+    background-color: #007bff; /* Cor do botão */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+
+/* Estilo adicional para o ícone de busca */
+.search-icon {
+    width: 10px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 10px;
+    vertical-align: middle;
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="tela-inicio">
+     <div class="header">
+      <div class="tabs-grp-1">
+        <div class="tabs-grp-12">
+          <div class="tab-default">
+            <div class="todos-os-f-rum">Todos os fórum</div>
+          </div>
+        </div>
+        <div class="tabs-grp-2">
+          <div class="tab-default2">
+            <div class="projetos">Projetos</div>
+          </div>
+        </div>
+      </div>
+      <div class="search-account-info">
+        <div class="search-bar">
+          <div class="content">
+              <form action="#" method="GET" class="search-form">
+                  <div class="input-group">
+                      <input type="text" class="search-input" placeholder="Pesquisar..." aria-label="Pesquisar">
+                      <button type="submit" class="search-button">
+                          <img class="search-icon" src="./assests/search.svg" alt="Buscar">
+                      </button>
+                  </div>
+              </form>
+          </div>
+      </div>
+      
+        <div class="content-icon">
+          <div class="profile-content-1">
+            <img class="avatar" src="./assests/user.png" />
+            <div class="content2">
+              <div class="title">Giselle Silva</div>
+              <div class="overline">FULL STACK</div>
+            </div>
+          </div>
+          <div class="vuesax-linear-arrow-down">
+            <img
+              class="vuesax-linear-arrow-down2"
+              src="./assests/arrow-down.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="contacts-grp-1">
+          <div class="c-1-c-2">
+            <div class="contacts">
+              <div class="conex-es">Conexões</div>
+              <div class="rectangle-34625257"></div>
+            </div>
+            <div class="friends-list-grp-1">
+              <div class="friend-list-1">
+                <div class="profile-img-1">
+                  <div class="rectangle-34625156"></div>
+                  <div class="icon-wrapper">
+                    <img class="rectangle-346251552" src="./assests/user.svg" />
+                  </div>
+                </div>
+                <div class="janayna-basniak">Janayna Basniak</div>
+              </div>
+              <div class="friend-list-2">
+                <div class="profile-img-1">
+                  <img class="rectangle-346251552" src="./assests/user.svg" />
+                  <div class="rectangle-34625156"></div>
+                </div>
+                <div class="rafaela-martins">Rafaela Martins</div>
+              </div>
+              <div class="friend-list-3">
+                <div class="profile-img-1">
+                  <img class="rectangle-346251552" src="./assests/user.svg" />
+                  <div class="rectangle-34625156"></div>
+                </div>
+                <div class="maria-lais">Maria Lais</div>
+              </div>
+              <div class="friend-list-4">
+                <div class="profile-img-1">
+                  <img class="rectangle-346251552" src="./assests/user.svg" />
+                  <div class="rectangle-34625156"></div>
+                </div>
+                <div class="leda-tavares">Leda Tavares</div>
+              </div>
+              <div class="friend-list-5">
+                <div class="profile-img-1">
+                  <img class="rectangle-346251552" src="./assests/user.svg" />
+                  <div class="rectangle-34625156"></div>
+                </div>
+                <div class="gabriela-russell">Gabriela Russell</div>
+              </div>
+              <div class="friend-list-6">
+                <div class="profile-img-1">
+                  <img class="rectangle-346251552" src="./assests/user.svg" />
+                  <div class="rectangle-34625156"></div>
+                </div>
+                <div class="dianne-santos">Dianne Santos</div>
+              </div>
+            </div>
+          </div>
+          <div class="ver-todas">Ver todas</div>
+        </div>
+        <div class="contacts-grp-2">
+          <div class="contacts">
+            <div class="f-rum-sugeridos">Fórum sugeridos</div>
+            <div class="rectangle-34625257"></div>
+          </div>
+          <div class="c-1-c-2">
+            <div class="friends-list-grp-1">
+                <div class="suggest-item-1">
+                    <a href="#" class="design-gr-fico">Design gráfico</a>
+                </div>
+            </div>
+            <div class="friends-list-grp-4">
+                <div class="suggest-item-1">
+                    <a href="#" class="technology-news-update">Technology news update</a>
+                </div>
+            </div>
+            <div class="friends-list-grp-3">
+                <div class="suggest-item-1">
+                    <a href="#" class="freelancers">Freelancers</a>
+                </div>
+            </div>
+            <div class="friends-list-grp-6">
+                <div class="suggest-item-1">
+                    <a href="#" class="marketing">Marketing</a>
+                </div>
+            </div>
+            <div class="friends-list-grp-2">
+                <div class="suggest-item-1">
+                    <a href="#" class="blender-tutoriais">Blender tutoriais</a>
+                </div>
+            </div>
+            <div class="friends-list-grp-7">
+                <div class="suggest-item-1">
+                    <a href="#" class="aprenda-java">Aprenda java</a>
+                </div>
+            </div>
+        </div>
+        <div class="ver-todas2">Ver todas</div>
+        </div>
+        <div class="what-s-on-your-mind-comp">
+          <div class="frame-1261156685">
+              <div class="frame-1261156684">
+                  <img class="avatar" src="./assests/user.png" />
+                  <div class="frame-1261156678">
+                      <input type="text" id="newPostInput" placeholder="O que você quer compartilhar?">
+                  </div>
+              </div>
+              <div class="frame-1261156659">
+                  <!-- Primeira imagem -->
+                  <a href="link_para_ação_1">
+                      <img class="tabler-icon-photo" src="./assests/photo-circle-plus.svg" />
+                  </a>
+                  <!-- Segunda imagem -->
+                  <a href="link_para_ação_2">
+                      <img class="tabler-icon-brand-youtube" src="./assests/brand-youtube.svg" />
+                  </a>
+                  <!-- Terceira imagem -->
+                  <a href="link_para_ação_3">
+                      <img class="tabler-icon-calendar-month" src="./assests/calendar-month.svg" />
+                  </a>
+                  <div class="button-commponent" id="adicionarPost">
+                      <div class="postar">Postar</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Div para exibir os posts -->
+      <div class="posts">
+          <ul id="postList">
+          </ul>
+      </div>
+        
+        <div class="_31">+31</div>
+        <div class="post-content-grp-1">
+          <div class="content-1-2">
+            <div class="_1">
+              <div class="username-icon">
+                <div class="user-name">
+                  <img class="rectangle-40068" src="./assests/user.png" />
+                  <div class="frame-1261156215">
+                    <div class="title2">Giselle Silva</div>
+                    <div class="_12-april-at-09-28-pm">Desenvolvedora front-end</div>
+                    <div class="_12-april-at-09-28-pm2">12h atrás</div>
+                  </div>
+                </div>
+                <img
+                  class="component-icon-ic-more"
+                  src="component-icon-ic-more0.svg"
+                />
+              </div>
+              <div class="peace-on-earth-a-won">
+                Lorem ipsum dolor sit amet consectetur. Morbi elit sed condimentum
+                diam. Tincidunt faucibus dui sed non viverra quis tempor. Diam et
+                malesuada nunc est consectetur lectus turpis non. At nunc dis felis
+                enim in tristique ipsum.
+              </div>
+            </div>
+            <div class="like-comment-share-btn">
+              <div class="likes-comment-btn">
+                <div class="likes">
+                  <img class="tabler-icon-heart" src="assests/heart.svg" />
+                  <div class="_12-likes">2.8K Curtidas</div>
+                </div>
+                <div class="comment">
+                  <img
+                    class="tabler-icon-message-circle-2"
+                    src="./assests/message.svg"
+                  />
+                  <div class="_7-comments">7 Comentários</div>
+                </div>
+              </div>
+              <div class="share-btn">
+                <img class="tabler-icon-share-3" src="./assests/share-3.svg" />
+                <div class="_0-share">Compartilhar</div>
+              </div>
+            </div>
+          </div>
+          <div class="comment-box">
+            <img class="avatar" src="./assests/user.png" />
+            <div class="frame-1261156678">
+              <div class="what-s-on-your-mind">Escreva um comentário...</div>
+            </div>
+          </div>
+        </div>
+        <div class="post-content-grp-2">
+          <div class="content-1-2">
+            <div class="_1">
+              <div class="username-icon">
+                <div class="user-name">
+                  <img class="rectangle-400682" src="./assests/user.svg" />
+                  <div class="frame-1261156215">
+                    <div class="title3">Joana Maria da Costa</div>
+                    <div class="_12-april-at-09-28-pm">UX designer</div>
+                    <div class="_12-april-at-09-28-pm2">1d atrás</div>
+                  </div>
+                </div>
+                <img
+                  class="component-icon-ic-more2"
+                  src="component-icon-ic-more1.svg"
+                />
+              </div>
+              <div class="peace-on-earth-a-won">
+                Lorem ipsum dolor sit amet consectetur. Massa velit id vitae risus
+                interdum sagittis id felis pellentesque. Iaculis cras condimentum
+                pellentesque lacinia iaculis curabitur.
+              </div>
+              <img class="image-14" src="./assests/image-150.png" />
+            </div>
+            <div class="like-comment-share-btn">
+              <div class="likes-comment-btn">
+                <div class="likes">
+                  <div class="vuesax-linear-heart">
+                    <img
+                      class="vuesax-linear-heart2"
+                      src="vuesax-linear-heart1.svg"
+                    />
+                  </div>
+                  <div class="_12-likes">3.3K Likes</div>
+                </div>
+                <div class="comment">
+                  <div class="vuesax-linear-message-2">
+                    <img
+                      class="vuesax-linear-message-22"
+                      src="vuesax-linear-message-21.svg"
+                    />
+                  </div>
+                  <div class="_7-comments">73 Comments</div>
+                </div>
+              </div>
+              <div class="share-btn">
+                <div class="icon-set">
+                  <img class="vuesax-linear-send-2" src="vuesax-linear-send-20.svg" />
+                </div>
+                <div class="_0-share">Share</div>
+              </div>
+            </div>
+          </div>
+          <div class="comment-box">
+            <img class="rectangle-400683" src="rectangle-400682.svg" />
+            <div class="frame-12611566782">
+              <div class="what-s-on-your-mind">Write your comment</div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-open">
+          <div class="navigation">
+            <div class="title4">
+                <div class="overline2">MENU</div>
+            </div>
+            <a href="#" class="link">
+                <img class="tabler-icon-home" src="./assests/home.svg" />
+                <div class="label">Home</div>
+            </a>
+            <a href="#" class="link">
+                <img class="tabler-icon-file-description" src="./assests/file-description.svg" />
+                <div class="label">Portfólio</div>
+            </a>
+            <a href="#" class="link">
+                <img class="tabler-icon-rocket" src="./assests/rocket.svg" />
+                <div class="label">Desafios</div>
+            </a>
+            <div class="dropdown">
+                <a href="#" class="link2" onclick="toggleForumOptions()">
+                    <img class="tabler-icon-users-group" src="./assests/users-group.svg" />
+                    <div class="label">Fórum</div>
+                    <img class="icon-chevron" src="icon-chevron0.svg" />
+                </a>
+            </div>
+        </div>
+        <div class="links-container">
+            <div class="link3">
+                <div class="label2">#carreiras</div>
+                <div class="radius"></div>
+            </div>
+            <div class="link4">
+                <div class="label3">#games</div>
+                <div class="radius"></div>
+            </div>
+            <div class="link3">
+                <div class="label2">#dev-full-stack</div>
+                <div class="radius"></div>
+            </div>
+            <div class="link3">
+                <div class="label2">#explorar</div>
+                <div class="radius"></div>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="navigation">
+            <a href="#" class="link">
+                <img class="icon-help-circle" src="./assests/help-circle.svg" />
+                <div class="label4">Suporte</div>
+            </a>
+            <a href="#" class="link">
+                <img class="icon-log-out" src="assests/logout.svg" />
+                <div class="label5">Sair</div>
+            </a>
+        </div>
+    
+    
+          <div class="button">
+            <img class="icon-chevron2" src="./assests/chevron-left.svg" />
+          </div>
+        </div>
+        <div class="frame-4">
+          <div class="frame-42">
+            <div class="typography">
+              <div class="h-1">
+                <span>
+                  <span class="h-1-span">Olá,</span>
+                  <span class="h-1-span2">Giselle</span>
+                  <span class="h-1-span3">😄</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="h-12">Seja bem vinda!</div>
+          
+        </div>
+      </div>
+      
+</body>
+<script>
+    function toggleForumOptions() {
+        var forumOptions = document.querySelector('.links-container');
+        // Verifica se as opções do fórum estão visíveis
+        if (forumOptions.style.display === "none") {
+            // Se estiverem ocultas, mostra-as
+            forumOptions.style.display = "block";
+        } else {
+            // Se estiverem visíveis, oculta-as
+            forumOptions.style.display = "none";
+        }
+    }
+
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <style>
+       
+        .what-s-on-your-mind-comp {
+            background: #241d31;
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 682px;
+            width: 100%;
+            border: 1px solid black;
+            box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+        }
+        .frame-1261156685 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-shrink: 0;
+            width: 682px;
+            position: relative;
+        }
+        .frame-1261156684 {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            align-self: stretch;
+            flex-shrink: 0;
+            position: relative;
+        }
+        .avatar {
+            border-radius: 36.22px;
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            position: relative;
+            object-fit: cover;
+        }
+        .frame-1261156678 {
+            background: #3d3252;
+            border-radius: 8px;
+            padding: 15px 12px 15px 12px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        .what-s-on-your-mind {
+            color: var(--color-dark-heading-c2-dark, #d7d9e3);
+            text-align: left;
+            font-family: "Inter-Regular", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            position: relative;
+        }
+        .frame-1261156659 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            align-self: stretch;
+            flex-shrink: 0;
+            position: relative;
+            gap: 20px;
+        }
+        .icons-grp-2 {
+            display: flex;
+            flex-direction: row;
+            gap: 14px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-shrink: 0;
+            position: relative;
+        }
+        .tabler-icon-photo,
+        .tabler-icon-brand-youtube,
+        .tabler-icon-calendar-month {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            overflow: visible;
+        }
+        .button-commponent {
+            background: #f22e62;
+            border-radius: 6px;
+            padding: 0px 20px 0px 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            height: 40px;
+            position: relative;
+            cursor: pointer; /* Adicionando a propriedade cursor */
+        }
+        .postar {
+            color: var(--global-neutral-white, #ffffff);
+            text-align: left;
+            font-family: "Inter-Medium", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            position: relative;
+        }
+        #newPostInput {
+            width: 100%;
+            font-size: 16px;
+            color: white;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+        #newPostInput::placeholder {
+            color: white;
+            
+        }
+        .posts {
+            box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+    background: #241d31;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Alterado de flex-start para center */
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    max-width: 682px;
+    margin:  auto;
+   
+}
+
+        #postList {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 90%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .post-item {
+            
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: relative;
+            width: 100%;
+        }
+        .post-header {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .post-avatar {
+            border-radius: 50%;
+            width: 52px;
+            height: 52px;
+            object-fit: cover;
+        }
+        .post-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .post-username {
+            color: #f0f1f5;
+            font-family: "Inter-Medium", sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+        }
+        .post-timestamp {
+            color: #b3b6c4;
+            font-family: "Inter-Regular", sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .post-content {
+            color: #bec0c9;
+            font-family: "Inter-Regular", sans-serif;
+            font-size: 14px;
+            line-height: 160%;
+            font-weight: 400;
+            width: 100%;
+        }
+        .post-actions {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .post-actions-left {
+            display: flex;
+            flex-direction: row;
+            gap: 18px;
+        }
+        .post-action {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .post-action-icon {
+            width: 24px;
+            height: 24px;
+        }
+        .post-action-text {
+            color: #d7d9e3;
+            font-family: "Inter-Regular", sans-serif;
+            font-size: 14px;
+            line-height: 145%;
+            font-weight: 400;
+        }
+        .h1 {
+            text-align: center;
+        }
+        .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Ajuste conforme necessário */
+}
+
+.h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">Protótipo do funcionamento do post</h1>
+    </div>
+    <div class="what-s-on-your-mind-comp">
+        <div class="frame-1261156685">
+            <div class="frame-1261156684">
+                <img class="avatar" src="./assests/user.png" />
+                <div class="frame-1261156678">
+                    <input type="text" id="newPostInput" placeholder="O que você quer compartilhar?">
+                </div>
+            </div>
+            <div class="frame-1261156659">
+                <!-- Primeira imagem -->
+                <a href="link_para_ação_1">
+                    <img class="tabler-icon-photo" src="./assests/photo-circle-plus.svg" />
+                </a>
+                <!-- Segunda imagem -->
+                <a href="link_para_ação_2">
+                    <img class="tabler-icon-brand-youtube" src="./assests/brand-youtube.svg" />
+                </a>
+                <!-- Terceira imagem -->
+                <a href="link_para_ação_3">
+                    <img class="tabler-icon-calendar-month" src="./assests/calendar-month.svg" />
+                </a>
+                <div class="button-commponent" id="adicionarPost">
+                    <div class="postar">Postar</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Div para exibir os posts -->
+    <div class="posts">
+        <ul id="postList">
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const addButton = document.getElementById('adicionarPost');
+    const postList = document.getElementById('postList');
+    const newPostInput = document.getElementById('newPostInput');
+
+    addButton.addEventListener('click', function () {
+        const newPost = newPostInput.value.trim();
+        if (newPost) {
+            const listItem = document.createElement('li');
+            listItem.className = 'post-item';
+            listItem.innerHTML = `
+                <div class="post-header">
+                    <img class="post-avatar" src="./assests/user.png" />
+                    <div class="post-info">
+                        <div class="post-username">Giselle Silva</div>
+                        <div class="post-timestamp">Agora mesmo</div>
+                    </div>
+                </div>
+                <div class="post-content">${newPost}</div>
+                <div class="post-actions">
+                    <div class="post-actions-left">
+                        <div class="post-action">
+                            <img class="post-action-icon" src="./assests/heart.svg" />
+                            <div class="post-action-text">Curtir</div>
+                        </div>
+                        <div class="post-action">
+                            <img class="post-action-icon" src="./assests/message.svg" />
+                            <div class="post-action-text">Comentar</div>
+                        </div>
+                    </div>
+                    <div class="post-action">
+                        <img class="post-action-icon" src="./assests/share-3.svg" />
+                        <div class="post-action-text">Compartilhar</div>
+                    </div>
+                </div>
+            `;
+            postList.insertBefore(listItem, postList.firstChild);
+
+            // Salvar o novo comentário no localStorage
+            const savedPosts = JSON.parse(localStorage.getItem('posts')) || [];
+            savedPosts.unshift(newPost);
+            localStorage.setItem('posts', JSON.stringify(savedPosts));
+
+            newPostInput.value = '';
+        } else {
+            alert('Por favor, digite algo para postar.');
+        }
+    });
+
+    // Carregar os comentários salvos do localStorage
+    const savedPosts = JSON.parse(localStorage.getItem('posts')) || [];
+    savedPosts.forEach(post => {
+        const listItem = document.createElement('li');
+        listItem.className = 'post-item';
+        listItem.innerHTML = `
+            <div class="post-header">
+                <img class="post-avatar" src="./assests/user.png" />
+                <div class="post-info">
+                    <div class="post-username">Giselle Silva</div>
+                    <div class="post-timestamp">Agora mesmo</div>
+                </div>
+            </div>
+            <div class="post-content">${post}</div>
+            <div class="post-actions">
+                <div class="post-actions-left">
+                    <div class="post-action">
+                        <img class="post-action-icon" src="./assests/heart.svg" />
+                        <div class="post-action-text">Curtir</div>
+                    </div>
+                    <div class="post-action">
+                        <img class="post-action-icon" src="./assests/message.svg" />
+                        <div class="post-action-text">Comentar</div>
+                    </div>
+                </div>
+                <div class="post-action">
+                    <img class="post-action-icon" src="./assests/share-3.svg" />
+                    <div class="post-action-text">Compartilhar</div>
+                </div>
+            </div>
+        `;
+        postList.appendChild(listItem);
+    });
+});
+
+    </script>
+</body>
+</html>
