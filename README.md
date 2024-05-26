@@ -21,8 +21,8 @@ O projeto está organizado dessa maneira:
 ├── 📂front-end/
 │ ├── index.html # Página inicial
 │ ├── index2.html # Página de protótipo de postagem
-│ ├── 📂assets/ # Recursos como imagens
-│ │ └─ # Imagem de perfil
+│ └── 📂assets/ # Recursos como imagens
+│     └─ 🖼️ # Imagem de perfil no comando promtil
 
 ## Como Executar o Projeto 🚀💻
 
