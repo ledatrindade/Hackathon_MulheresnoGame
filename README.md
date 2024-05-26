@@ -22,7 +22,7 @@ O projeto está organizado dessa maneira:
     ├── index.html # Página inicial                                                                                                                                                                                                            
     ├── index2.html # Página de protótipo de postagem                                                                                                                                                                                          
     └── 📂assets/ # Recursos como imagens                                                                                                                                                                                                     
-        └─ 🖼️ # Imagem de perfil no comando prompt                                                                                                                                                                                           
+         └─ 🖼️ # Imagem de perfil no comando prompt                                                                                                                                                                                           
 
 
 ## Como Executar o Projeto 🚀💻
