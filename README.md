@@ -8,7 +8,7 @@ O projeto está organizado dessa maneira:
 
 📂Codigos_Fontes/                                                                                                                                                                                                                              
 │                                                                                                                                                                                                                                               
-├── 📂Back_end/ 
+├── 📂Back_end/                                                                                                                                                                                                                              
 │   ├──📂node_modules/  
 │   ├── 📂src/                                                                                                                                                                                                                                 
 │   │   ├── 📂server/                                                                                                                                                                                                                         
@@ -17,12 +17,11 @@ O projeto está organizado dessa maneira:
 │   ├── .gitignore # Ignoração do node_modules                                                                                                                                                                                                 
 │   ├── package.json # Configuração do Node.js                                                                                                                                                                                                 
 │   └── yarn.lock # Controle de dependências                                                                                                                                                                                                   
-│                                                                                                                                                                                                                                               
-└── 📂front-end/                                                                                                                                                                                                                               
-|   ├── index.html # Página inicial                                                                                                                                                                                                            
-|   ├── index2.html # Página de protótipo de postagem                                                                                                                                                                                          |   └── 📂assets/ # Recursos como imagens                                                                                                                                                                                                     
-|   |   └─ 🖼️ # Imagem de perfil no comando prompt                                                                                                                                                                                           
-
+├── 📂front-end/                                                                                                                                                                                                                              
+│   ├── index.html # Página inicial                                                                                                                                                                                                             
+│   ├── index2.html # Página de protótipo de postagem                                                                                                                                                                                           
+│   └── 📂assets/ # Recursos como imagens                                                                                                                                                                                                      
+│    │   └─ 🖼️ # Imagem de perfil no comando prompt                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 ## Como Executar o Projeto 🚀💻
 
