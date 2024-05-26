@@ -6,15 +6,15 @@ Este é o código fonte simples de uma aplicação web básica para uma rede soc
 
 O projeto está organizado dessa maneira:
 
-📂Codigos_Fontes/
-│
-├── 📂Back_end/
-│   ├──📂node_modules/ 
-│   ├── 📂src/
-│   │   ├── 📂server/
-│   │   │   └── server.ts # Arquivo do servidor Express
-│   │   └── index.ts # Arquivo principal do backend
-│   ├── .gitignore # Ignoração do node_modules
+📂Codigos_Fontes/                                                                                                                                                                                                                              
+│                                                                                                                                                                                                                                               
+├── 📂Back_end/ 
+│   ├──📂node_modules/  
+│   ├── 📂src/                                                                                                                                                                                                                                 
+│   │   ├── 📂server/                                                                                                                                                                                                                         
+│   │   │   └── server.ts # Arquivo do servidor Express                                                                                                                                                                                         
+│   │   └── index.ts # Arquivo principal do backend                                                                                                                                                                                             
+│   ├── .gitignore # Ignoração do node_modules                                                                                                                                                                                                 
 │   ├── package.json # Configuração do Node.js
 │   └── yarn.lock # Controle de dependências
 │
