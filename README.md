@@ -34,7 +34,7 @@ Para rodar o Back:
 3. Navegue até o diretório `back/` e execute `yarn install`, `yarn install expresse`, `yarn add -D typescript @types/express` para instalar as dependências.
 4. Execute `ts-node-dev` para iniciar o servidor backend.
 
-Para rodar o Front
+Para o Front
 
 1. Vá para o diretório `front-end/` e abra o arquivo `index.html` em um navegador para ver o protótipo da página inicial.
 2. Vá para o diretório `front-end/` e abra o arquivo `index2.html` em um navegador para ver o protótipo do funcionamento do post.
