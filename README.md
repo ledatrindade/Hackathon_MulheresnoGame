@@ -1,6 +1,6 @@
 👩‍💻😎 Bem-vindo ao Código fonte da TECH HER! 😎👩‍💻
 
-Este é o código fonte simples de uma aplicação web básica para uma rede social: A TECH HER. 🌐👩✨
+Este é um código fonte simples de uma aplicação web básica para uma rede social: A TECH HER. 🌐👩✨
 
 ## Estrutura de Arquivos e Pastas 📁📂
 
