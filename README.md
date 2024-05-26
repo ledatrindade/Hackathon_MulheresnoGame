@@ -9,20 +9,21 @@ O projeto está organizado dessa maneira:
 📂Codigos_Fontes/
 │
 ├── 📂Back_end/
-│ ├──📂node_modules/ 
-│ ├── 📂src/
-│ │ ├── 📂server/
-│ │ │ └── server.ts # Arquivo do servidor Express
-│ │ └── index.ts # Arquivo principal do backend
-│ ├── .gitignore # Ignoração do node_modules
-│ ├── package.json # Configuração do Node.js
-│ └── yarn.lock # Controle de dependências
+│   ├──📂node_modules/ 
+│   ├── 📂src/
+│   │   ├── 📂server/
+│   │   │   └── server.ts # Arquivo do servidor Express
+│   │   └── index.ts # Arquivo principal do backend
+│   ├── .gitignore # Ignoração do node_modules
+│   ├── package.json # Configuração do Node.js
+│   └── yarn.lock # Controle de dependências
 │
-├── 📂front-end/
-│ ├── index.html # Página inicial
-│ ├── index2.html # Página de protótipo de postagem
-│ └── 📂assets/ # Recursos como imagens
-│     └─ 🖼️ # Imagem de perfil no comando promtil
+└── 📂front-end/
+    ├── index.html # Página inicial
+    ├── index2.html # Página de protótipo de postagem
+    └── 📂assets/ # Recursos como imagens
+        └─ 🖼️ # Imagem de perfil no comando prompt
+
 
 ## Como Executar o Projeto 🚀💻
 
